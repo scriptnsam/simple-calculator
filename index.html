@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <!-- display screen -->
+            <div class="display-screen">
+               <input type="text" id="output" class="display-output" value="" readonly>
+            </div>
+
+            <!-- keypads sections -->
+            <div class="keypad-section">
+
+                <div class="flex-1">
+                    <div class="group-1">
+                        <div class="number" onclick="displayVal(1)">1</div>
+                        <div class="number" onclick="displayVal(2)">2</div>
+                        <div class="number" onclick="displayVal(3)">3</div>
+                    </div>
+                    <div class="group-2">
+                        <div class="number" onclick="displayVal(4)">4</div>
+                        <div class="number" onclick="displayVal(5)">5</div>                
+                        <div class="number" onclick="displayVal(6)">6</div>
+                    </div>
+                    <div class="group-3">
+                        <div class="number" onclick="displayVal(7)">7</div>
+                        <div class="number" onclick="displayVal(8)">8</div>
+                        <div class="number" onclick="displayVal(9)">9</div>
+                    </div>
+                    <div class="group-5">
+                        <div class="number" onclick="displayVal(0)">0</div>
+                        <div class="number" onclick="displayVal('00')">00</div>
+                        <div class="number" onclick="displayVal('000')">000</div>
+                    </div>
+                </div>
+
+                <div class="group-4">
+                    <div class="small-group1">
+                        <div class="number" onclick="displayVal('+')">+</div>
+                        <div class="number" onclick="displayVal('-')">-</div>
+                        <div class="number" onclick="displayVal('*')">*</div>
+                        <div class="number" onclick="displayVal('**')">^</div>
+                        <div class="number" onclick="displayVal('.')">.</div>
+                    </div>
+
+                    <div class="small-group2">
+                        <div class="number" onclick="deleteVal()">DEL</div>
+                        <div class="number" onclick="displayVal('/')">/</div>
+                        <div class="number" onclick="displayVal('&Sqrt;')">&Sqrt;</div>
+                        <div class="number" onclick="clearAll()">C</div>
+                        <div class="number" onclick="solve()">=</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
